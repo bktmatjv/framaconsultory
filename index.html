@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAMA Consulting | Agencia de Automatización Digital</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- AOS CSS (Animaciones) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo-ico.svg" type="image/x-icon">
+    <link rel="stylesheet" href="template/css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="img/logo-oficial.svg" alt="FRAMA Consulting Logo" class="logo-img">
+            </a>
+            
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#soluciones">Soluciones</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="#contacto" class="btn btn-header">Cotizar Proyecto</a>
+                <button class="hamburger" onclick="toggleMenu()"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN SECTIONS -->
+    <section data-bg="#F3F8FC" class="container hero">
+        <div data-aos="fade-right">
+            <span class="eyebrow">Agencia de Automatización Digital</span>
+            <h1>Impulsamos el crecimiento de tu negocio con sistemas digitales automatizados.</h1>
+            <p>Páginas web profesionales y automatización inteligente diseñadas específicamente para generar más clientes en talleres mecánicos, restaurantes y comercios locales.</p>
+            <div class="hero-btns">
+                <a href="#contacto" class="btn btn-primary">Solicitar Diagnóstico Gratuito <i class="ph-bold ph-arrow-right"></i></a>
+                <a href="#metodologia" class="btn btn-secondary">Ver Cómo Funciona</a>
+            </div>
+        </div>
+        <div class="hero-img" data-aos="fade-left">
+            <div style="display: flex; gap: 8px; margin-bottom: 24px;">
+                <div style="width: 12px; height: 12px; border-radius: 50%; background: #EF4444;"></div>
+                <div style="width: 12px; height: 12px; border-radius: 50%; background: #F59E0B;"></div>
+                <div style="width: 12px; height: 12px; border-radius: 50%; background: #10B981;"></div>
+            </div>
+            <div style="height: 180px; background: linear-gradient(180deg, rgba(96, 182, 209, 0.1) 0%, rgba(255,255,255,0) 100%); border-bottom: 4px solid var(--primary-light); border-radius: 8px 8px 0 0; position: relative; overflow: hidden; margin-bottom: 24px;">
+                <svg viewBox="0 0 100 40" preserveAspectRatio="none" style="width: 100%; height: 100%; position: absolute; bottom: 0;">
+                    <path d="M0,30 Q25,10 50,30 T100,10 L100,40 L0,40 Z" fill="rgba(96, 182, 209, 0.2)" />
+                    <path d="M0,30 Q25,10 50,30 T100,10" fill="none" stroke="var(--primary-light)" stroke-width="2" />
+                </svg>
+            </div>
+            <div style="display: flex; gap: 16px;">
+                <div style="flex: 1; height: 40px; background: var(--bg-light); border-radius: 8px; border: 1px solid var(--border-color); padding: 8px;"><div style="width: 40%; height: 6px; background: var(--primary-light); border-radius: 4px; margin-bottom: 8px;"></div><div style="width: 80%; height: 4px; background: #CBD5E1; border-radius: 4px;"></div></div>
+                <div style="flex: 1; height: 40px; background: var(--bg-light); border-radius: 8px; border: 1px solid var(--border-color); padding: 8px;"><div style="width: 60%; height: 6px; background: var(--primary-light); border-radius: 4px; margin-bottom: 8px;"></div><div style="width: 70%; height: 4px; background: #CBD5E1; border-radius: 4px;"></div></div>
+                <div style="flex: 1; height: 40px; background: var(--bg-light); border-radius: 8px; border: 1px solid var(--border-color); padding: 8px;"><div style="width: 50%; height: 6px; background: var(--primary-light); border-radius: 4px; margin-bottom: 8px;"></div><div style="width: 90%; height: 4px; background: #CBD5E1; border-radius: 4px;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EL PROBLEMA -->
+    <section data-bg="#FFFFFF" class="section-padding" id="nosotros">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="eyebrow">El Problema</span>
+                <h2 class="section-title">¿Por qué tu negocio está perdiendo clientes todos los días?</h2>
+                <p class="section-subtitle">Los métodos tradicionales ya no son suficientes. Si te identificas con esto, estás dejando dinero sobre la mesa.</p>
+            </div>
+            
+            <div class="grid-2x2">
+                <div class="card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-icon"><i class="ph-bold ph-warning-circle"></i></div>
+                    <h3>Sin Presencia Digital Profesional</h3>
+                    <p>No tienes una página web estructurada que genere confianza y convierta visitas en clientes reales.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon"><i class="ph-bold ph-clock"></i></div>
+                    <h3>Atención Lenta en WhatsApp</h3>
+                    <p>Respuestas tardías a prospectos interesados que terminan yéndose con la competencia.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-icon"><i class="ph-bold ph-chat-teardrop-slash"></i></div>
+                    <h3>Falta de Seguimiento</h3>
+                    <p>Oportunidades perdidas por no tener un sistema de control de cotizaciones o reservas pendientes.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-icon"><i class="ph-bold ph-lightning"></i></div>
+                    <h3>Dependencia del Boca a Boca</h3>
+                    <p>Crecimiento estancado e impredecible al no contar con un sistema que atraiga clientes de forma automática.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTRA SOLUCIÓN -->
+    <section data-bg="#F3F8FC" class="section-padding" id="soluciones">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="eyebrow">Nuestra Solución</span>
+                <h2 class="section-title">Tu Socio Estratégico para el Crecimiento Digital</h2>
+                <p class="section-subtitle">No hacemos simples páginas web. Construimos ecosistemas digitales completos enfocados en aumentar tus ingresos y reducir tu carga operativa.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="card" data-aos="fade-up" data-aos-delay="0" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph-bold ph-desktop"></i></div>
+                    <h3>Sitio Web de Alta Conversión</h3>
+                    <p>Diseño premium, rápido y adaptado a móviles que posiciona tu marca como líder en su zona.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph-bold ph-whatsapp-logo"></i></div>
+                    <h3>Automatización de WhatsApp</h3>
+                    <p>Respuestas instantáneas 24/7. Califica prospectos y agenda citas sin intervención manual.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph-bold ph-calendar-check"></i></div>
+                    <h3>Sistema de Citas y Reservas</h3>
+                    <p>Tus clientes agendan automáticamente según tu disponibilidad real, reduciendo ausencias.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="0" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph-bold ph-users-three"></i></div>
+                    <h3>Base de Datos CRM</h3>
+                    <p>Control total de tu cartera de clientes. Historial de servicios, preferencias y datos de contacto centralizados.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph-bold ph-pulse"></i></div>
+                    <h3>Seguimiento Inteligente</h3>
+                    <p>Recordatorios automáticos para que tus prospectos no se enfríen y completen su compra o visita.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 24px auto;"><i class="ph-bold ph-chart-line-up"></i></div>
+                    <h3>Reactivación de Clientes</h3>
+                    <p>Campañas automatizadas para que antiguos clientes vuelvan a tu negocio mes a mes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METODOLOGÍA -->
+    <section data-bg="#FFFFFF" class="section-padding" id="metodologia">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up" style="margin-bottom: 80px;">
+                <span class="eyebrow">Metodología Comprobada</span>
+                <h2 class="section-title">4 Pasos Hacia el Control Digital</h2>
+                <p class="section-subtitle">Implementamos tu sistema de forma rápida y estructurada, sin interrumpir la operación diaria de tu negocio.</p>
+            </div>
+            
+            <div class="method-grid">
+                <div class="method-step" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-num step-bg">1</div>
+                    <h3>Análisis y Diagnóstico</h3>
+                    <p>Evaluamos los procesos actuales de tu negocio para identificar cuellos de botella y oportunidades.</p>
+                </div>
+                <div class="method-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-num step-bg">2</div>
+                    <h3>Estrategia y Diseño</h3>
+                    <p>Creamos el flujo de conversión ideal y diseñamos una plataforma premium adaptada a tu marca.</p>
+                </div>
+                <div class="method-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-num step-bg">3</div>
+                    <h3>Implementación</h3>
+                    <p>Desarrollamos la web, configuramos las automatizaciones y conectamos tus canales de atención.</p>
+                </div>
+                <div class="method-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-num step-bg">4</div>
+                    <h3>Optimización y Crecimiento</h3>
+                    <p>Lanzamos el sistema y lo afinamos con datos reales para maximizar la captura de clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAQUETES / PLANES -->
+    <section data-bg="#F3F8FC" class="section-padding" id="servicios">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="eyebrow">Paquetes de Servicios</span>
+                <h2 class="section-title">Soluciones a la Medida de tu Negocio</h2>
+                <p class="section-subtitle">Planes estructurados según la etapa de crecimiento de tu empresa.</p>
+            </div>
+
+            <div class="grid-3" style="align-items: center; margin-top: 40px;">
+                
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+                    <h3>Presencia Profesional</h3>
+                    <p>Ideal para negocios que necesitan establecer autoridad y generar confianza en internet con una web de alto nivel.</p>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> Diseño Web Corporativo (Multi-página)</li>
+                        <li><i class="ph-bold ph-check"></i> Diseño 100% Móvil (Responsive)</li>
+                        <li><i class="ph-bold ph-check"></i> Optimización SEO Local básica</li>
+                        <li><i class="ph-bold ph-check"></i> Formulario de contacto integrado</li>
+                        <li><i class="ph-bold ph-check"></i> Botón flotante de WhatsApp</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Consultar Plan</a>
+                </div>
+
+                <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="100">
+                    <div class="badge-popular">Sistema Más Solicitado</div>
+                    <h3>Sistema Automatizado</h3>
+                    <p>Para empresas que ya tienen web (o no la necesitan) y buscan delegar la atención operativa y reservas al sistema.</p>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> Chatbot Inteligente para WhatsApp</li>
+                        <li><i class="ph-bold ph-check"></i> Sistema Automático de Reservas/Citas</li>
+                        <li><i class="ph-bold ph-check"></i> Calificación automática de prospectos</li>
+                        <li><i class="ph-bold ph-check"></i> Recordatorios por Email/WhatsApp</li>
+                        <li><i class="ph-bold ph-check"></i> Panel CRM básico para gestión</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-header" style="width: 100%;">Consultar Plan</a>
+                </div>
+
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Plan Crecimiento Total</h3>
+                    <p>El ecosistema definitivo. Combina tu Presencia Profesional con un Sistema Automatizado completo para escalar.</p>
+                    <ul class="pricing-features">
+                        <li><i class="ph-bold ph-check"></i> Web Corporativa + Sistema Automatizado</li>
+                        <li><i class="ph-bold ph-check"></i> Embudos de Venta (Funnels)</li>
+                        <li><i class="ph-bold ph-check"></i> Automatización de Follow-up</li>
+                        <li><i class="ph-bold ph-check"></i> Campañas de Reactivación de clientes</li>
+                        <li><i class="ph-bold ph-check"></i> Soporte Prioritario y Mantenimiento</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Consultar Plan</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO EN TU NEGOCIO -->
+    <section data-bg="#FFFFFF" class="section-padding">
+        <div class="container impact-grid">
+            <div data-aos="fade-right">
+                <span class="eyebrow">El Impacto en tu Negocio</span>
+                <h2 class="section-title">Resultados Reales para tu Rentabilidad</h2>
+                <p class="section-subtitle" style="margin-left: 0; margin-bottom: 40px; text-align: left;">La automatización no es solo tecnología, es una inversión directa en el flujo de caja y la eficiencia de tu empresa. Descubre lo que un sistema estructurado hará por ti.</p>
+                <a href="#contacto" class="btn btn-cyan">Hablar con un Experto</a>
+            </div>
+            <div class="impact-list" data-aos="fade-left">
+                <div class="impact-item">
+                    <div class="icon"><i class="ph-bold ph-currency-dollar"></i></div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 4px;">Aumento Directo de Ingresos</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Más solicitudes convertidas y menos oportunidades perdidas por falta de respuesta.</p>
+                    </div>
+                </div>
+                <div class="impact-item">
+                    <div class="icon"><i class="ph-bold ph-clock"></i></div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 4px;">Menos Trabajo Manual Operativo</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Tu equipo dejará de responder las mismas preguntas y de agendar citas manualmente.</p>
+                    </div>
+                </div>
+                <div class="impact-item">
+                    <div class="icon"><i class="ph-bold ph-users"></i></div>
+                    <div>
+                        <h4 style="font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 4px;">Fidelización y Recurrencia</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Construyes una base de clientes sólida que vuelve gracias a seguimientos automatizados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASOS DE ÉXITO -->
+    <section data-bg="#F3F8FC" class="section-padding">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="eyebrow">Casos de Éxito</span>
+                <h2 class="section-title">Proyectos y Soluciones Estratégicas</h2>
+                <p class="section-subtitle">Transformamos la operatividad de negocios locales mediante ecosistemas digitales diseñados para convertir visitas en clientes recurrentes.</p>
+            </div>
+
+            <div class="grid-3">
+                
+                <!-- CASO 1: Es un enlace clickeable (a) -->
+                <a href="https://lifeandpeacespa.netlify.app/" target="_blank" class="case-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="case-img">
+                        <!-- IMAGEN DEL PROYECTO 1 -->
+                        <img src="img/casos_exito/lifeandspa.webp" alt="Proyecto Spa">
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">Bienestar y Salud</span>
+                        <h3 style="color: var(--primary-dark); margin-bottom: 12px; font-size: 1.2rem;">Landing Page de Alta Conversión para Spa</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Arquitectura orientada a la captación de leads premium, integrando canales de contacto directo y embudos de reserva inmediata.</p>
+                    </div>
+                </a>
+                
+                <!-- CASO 2: Es un enlace clickeable (a) -->
+                <a href="https://projlqs.netlify.app/" target="_blank" class="case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-img">
+                        <!-- IMAGEN DEL PROYECTO 2 -->
+                        <img src="img/casos_exito/laqueus.webp" alt="Proyecto E-commerce">
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">E-commerce y Retail</span>
+                        <h3 style="color: var(--primary-dark); margin-bottom: 12px; font-size: 1.2rem;">Ecosistema Digital Híbrido: Laqueus</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">(DEMO) Plataforma integral con catálogo de productos, sistema de carrito de compras para útiles escolares y secciones especializadas.</p>
+                    </div>
+                </a>
+                
+                <!-- CASO 3: Es un enlace clickeable (a) -->
+                <a href="https://wbautosdemo.netlify.app/" target="_blank" class="case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-img">
+                        <!-- IMAGEN DEL PROYECTO 3 -->
+                        <img src="img/casos_exito/wbautos.webp" alt="Proyecto Automotriz">
+                    </div>
+                    <div class="case-content">
+                        <span class="case-tag">Automotriz</span>
+                        <h3 style="color: var(--primary-dark); margin-bottom: 12px; font-size: 1.2rem;">Showroom Digital y Captación: WB Autos</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Demostración de Landing page diseñada para la exhibición de stock vehicular con sistemas de filtrado inteligente y agendamiento.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section data-bg="#FFFFFF" class="section-padding">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center">
+                <span class="eyebrow">Resolvemos tus Dudas</span>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="faq-container" style="margin-top: 40px;">
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuánto tiempo toma la implementación del sistema? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-answer">Dependiendo del plan elegido, la implementación completa (desde el diseño web hasta la automatización de WhatsApp) suele tomar entre 2 a 4 semanas. Trabajamos de manera ágil para que empieces a ver resultados lo antes posible.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Se integra completamente con mi número de WhatsApp actual? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-answer">Sí, podemos conectar el sistema de automatización y el chatbot directamente a tu línea actual de WhatsApp Business. No perderás tus contactos ni tu historial, simplemente potenciarás la herramienta.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Existen costos mensuales ocultos? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-answer">No hay costos ocultos. Diseñamos planes transparentes. El costo inicial cubre la creación y configuración de todo el sistema. Existen costos operativos mensuales bajos (como hosting, dominio y licencias de software de automatización) que te detallaremos con total claridad desde la primera reunión.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿El sistema se puede personalizar para mi industria? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-answer">Totalmente. Nuestro enfoque no es crear plantillas genéricas. Analizamos tu negocio (sea un taller, restaurante, clínica o despacho) y configuramos el sistema de reservas, las respuestas automatizadas y el CRM para que hablen el idioma de tu cliente ideal.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Ofrecen soporte después de lanzar el proyecto? <i class="ph-bold ph-caret-down"></i></div>
+                    <div class="faq-answer">Sí, contamos con planes de soporte y mantenimiento técnico continuo para asegurar que tu web y tus automatizaciones funcionen al 100% todo el tiempo, además de aplicar mejoras basadas en el comportamiento de tus clientes.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO (FONDO OSCURO) -->
+    <section data-bg="#0B2545" class="section-padding" id="contacto">
+        <div class="container" data-aos="fade-up">
+            <div class="contact-wrapper">
+                
+                <!-- Lado Izquierdo (Textos) -->
+                <div class="contact-text-area">
+                    <span class="eyebrow" style="color: var(--primary-light);">COTIZA TU PROYECTO</span>
+                    <h2>¿Listo para llevar tu negocio al siguiente nivel?</h2>
+                    <p>Déjanos tus datos y un experto en automatización de FRAMA Consulting analizará tu situación actual para mostrarte exactamente cómo multiplicar tus clientes y optimizar tu tiempo.</p>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="ph-fill ph-phone"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Atención Inmediata</h4>
+                            <p>+51 957474939</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="ph-fill ph-envelope-simple"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Correo Electrónico</h4>
+                            <p>hola@framaconsulting.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lado Derecho (Formulario) -->
+                <div>
+                    <div class="contact-form-card">
+                        <h3>Solicitar Diagnóstico Gratuito</h3>
+                        <form name="contacto"
+                        method="POST"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                        id="contact-form">
+
+                        <!-- Necesario para Netlify -->
+                        <input type="hidden" name="form-name" value="contacto">
+
+                        <!-- Anti spam -->
+                        <p style="display:none;">
+                            <label>No llenar esto si eres humano:
+                                <input name="bot-field">
+                            </label>
+                        </p>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nombre</label>
+                                <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Apellido</label>
+                                <input type="text" name="apellido" class="form-control" placeholder="Tu apellido" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Correo Electrónico</label>
+                            <input type="email" name="email" class="form-control" placeholder="correo@empresa.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Teléfono / WhatsApp</label>
+                            <input type="tel" name="telefono" class="form-control" placeholder="+51 999 999 999" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Servicio de Interés</label>
+                            <select name="servicio" class="form-control" required>
+                                <option value="" disabled selected>Selecciona un servicio...</option>
+                                <option>Sistema Automatizado (WhatsApp + Reservas)</option>
+                                <option>Presencia Profesional (Diseño Web)</option>
+                                <option>Plan Crecimiento Total</option>
+                                <option>Otra consulta</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Cuéntanos sobre tu negocio</label>
+                            <textarea name="mensaje" class="form-control"
+                                    placeholder="¿A qué se dedica tu empresa y qué retos tienes actualmente?"
+                                    required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Solicitar Cotización
+                        </button>
+
+                        <!-- Mensaje visual -->
+                        <div id="form-message" style="margin-top:15px; display:none;"></div>
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <!-- LOGO FOOTER MÁS GRANDE Y BLANCO -->
+                    <img src="img/logo-oficial.svg" alt="FRAMA Consulting Logo" class="footer-logo-img">
+                    
+                    <p class="footer-text">Sistemas digitales y automatización inteligente para escalar la operatividad y los ingresos de negocios locales.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#soluciones">Nuestra Solución</a></li>
+                        <li><a href="#servicios">Paquetes</a></li>
+                        <li><a href="#metodologia">Metodología</a></li>
+                        <li><a href="#nosotros">Por qué FRAMA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 FRAMA Consulting. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script src="template/js/index.js"></script>
+</body>
+</html>
