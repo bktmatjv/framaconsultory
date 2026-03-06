@@ -16,7 +16,7 @@ exports.handler = async function(event, context) {
         // --- ENVIAR CORREO CON FETCH Y RESEND ---
         // Usamos la API gratuita de Resend que no requiere instalar paquetes
         
-        const API_KEY_RESEND = "AQUI_PONDREMOS_TU_CLAVE"; // Pronto la cambiaremos
+        const API_KEY_RESEND = "re_XjuHu41F_KhpXmJP5ueBWPTKyTrGcsf9v"; // Pronto la cambiaremos
 
         const respuestaCorreo = await fetch('https://api.resend.com/emails', {
             method: 'POST',
@@ -26,7 +26,7 @@ exports.handler = async function(event, context) {
             },
             body: JSON.stringify({
                 from: 'onboarding@resend.dev', // Resend usa este correo por defecto para pruebas
-                to: 'TU_CORREO_REAL@gmail.com', // Pon aquí el correo donde quieres recibir las alertas
+                to: 'contacto.framaconsulting@gmail.com', // Pon aquí el correo donde quieres recibir las alertas
                 subject: `🔥 Nuevo cliente del Agente AI: ${nombre}`,
                 html: `
                     <h2>¡Tienes un nuevo prospecto interesado!</h2>
