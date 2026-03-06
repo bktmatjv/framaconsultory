@@ -1,0 +1,8 @@
+{
+  "name": "frama-consultory",
+  "version": "1.0.0",
+  "description": "Dependencias para el webhook de ElevenLabs",
+  "dependencies": {
+    "resend": "^3.2.0"
+  }
+}
