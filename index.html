@@ -18,13 +18,38 @@
 <body>
 
     <!-- HEADER -->
+    <div class="menu-overlay" id="menu-overlay" onclick="toggleMenu()"></div>
+
+    <div class="mobile-sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="img/logo-oficial.svg" alt="FM consultory Logo" class="sidebar-logo">
+            <button class="close-btn" onclick="toggleMenu()"><i class="ph ph-x"></i></button>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#nosotros" onclick="toggleMenu()">Nosotros</a></li>
+            <li class="has-submenu">
+                <a href="#" class="submenu-toggle" onclick="toggleSubmenu(event)">
+                    Servicios <i class="ph-bold ph-plus" id="submenu-icon"></i>
+                </a>
+                <ul class="submenu" id="mobile-submenu">
+                    <li><a href="#presencia-profesional" onclick="toggleMenu()">Presencia Digital</a></li>
+                    <li><a href="#sistema-automatizado" onclick="toggleMenu()">Automatización</a></li>
+                    <li><a href="#crecimiento-total" onclick="toggleMenu()">Sistema Completo</a></li>
+                </ul>
+            </li>
+            <li><a href="#metodologia" onclick="toggleMenu()">Metodología</a></li>
+            <li><a href="#contacto" onclick="toggleMenu()">Contacto</a></li>
+        </ul>
+    </div>
+
     <header id="main-header">
         <div class="nav-container">
             <a href="#" class="logo">
-                <img src="img/logo-oficial.svg" alt="FRAMA Consulting Logo" class="logo-img">
+                <img src="img/logo-oficial.svg" alt="FM consultory Logo" class="logo-img">
             </a>
             
-            <div class="nav-center">
+            <div class="nav-center desktop-nav">
                 <ul class="nav-links">
                     <li><a href="#soluciones">Soluciones</a></li>
                     <li><a href="#servicios">Servicios</a></li>
@@ -38,6 +63,7 @@
             </div>
         </div>
     </header>
+
 
     <!-- MAIN SECTIONS -->
     <section data-bg="#F3F8FC" class="container hero">
@@ -193,7 +219,7 @@
 
             <div class="grid-3" style="align-items: center; margin-top: 40px;">
                 
-                <div class="pricing-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="0" id="presecia-profesional">
                     <h3>Presencia Profesional</h3>
                     <p>Ideal para negocios que necesitan establecer autoridad y generar confianza en internet con una web de alto nivel.</p>
                     <ul class="pricing-features">
@@ -206,7 +232,7 @@
                     <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Consultar Plan</a>
                 </div>
 
-                <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="100" id="sistema-automatizado">
                     <div class="badge-popular">Sistema Más Solicitado</div>
                     <h3>Sistema Automatizado</h3>
                     <p>Para empresas que ya tienen web (o no la necesitan) y buscan delegar la atención operativa y reservas al sistema.</p>
@@ -220,7 +246,7 @@
                     <a href="#contacto" class="btn btn-header" style="width: 100%;">Consultar Plan</a>
                 </div>
 
-                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200" id="crecimiento-total">
                     <h3>Plan Crecimiento Total</h3>
                     <p>El ecosistema definitivo. Combina tu Presencia Profesional con un Sistema Automatizado completo para escalar.</p>
                     <ul class="pricing-features">

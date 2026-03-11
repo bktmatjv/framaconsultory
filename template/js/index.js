@@ -26,8 +26,40 @@
         });
 
         // 3. Menú Móvil
+        // 3. Menú Móvil (Sidebar Derecho)
         function toggleMenu() {
-            document.getElementById('main-header').classList.toggle('mobile-menu-active');
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('menu-overlay');
+            
+            // Añade o quita la clase 'active'
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            // Evita el scroll del fondo cuando el menú está abierto
+            if(sidebar.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+
+        function toggleSubmenu(event) {
+            event.preventDefault(); // Evita que la página salte al tocar el enlace
+            
+            const submenu = document.getElementById('mobile-submenu');
+            const icon = document.getElementById('submenu-icon');
+            
+            // Abre o cierra el submenú
+            submenu.classList.toggle('open');
+            
+            // Cambia el ícono de + a - dependiendo si está abierto o cerrado
+            if (submenu.classList.contains('open')) {
+                icon.classList.remove('ph-plus');
+                icon.classList.add('ph-minus');
+            } else {
+                icon.classList.remove('ph-minus');
+                icon.classList.add('ph-plus');
+            }
         }
 
         // 4. Lógica para Accordion FAQ
